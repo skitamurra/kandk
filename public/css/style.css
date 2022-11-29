@@ -1,0 +1,306 @@
+@charset "utf-8";
+/*リセットCSS（sanitize.css）の読み込み
+---------------------------------------------------------------------------*/
+@import url("https://unpkg.com/sanitize.css");
+/*slick.cssの読み込み
+---------------------------------------------------------------------------*/
+@import url("https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css");
+/*Font Awesomeの読み込み
+---------------------------------------------------------------------------*/
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+/*Google Fontsの読み込み
+---------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,300&display=swap');
+/*全体の設定
+---------------------------------------------------------------------------*/
+#home {
+	font-size: 15px;	/*基準となるフォントサイズの上書き*/
+	background-image: url(../images/image.png);
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	background-attachment: fixed;
+	/*opacity: 0.9;*/
+	background-color: rgba(65,105,225,0.3);
+	color: #eee;
+}
+
+#outline {
+	font-size: 15px;	/*基準となるフォントサイズの上書き*/
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	background-attachment: fixed;
+	/*opacity: 0.9;*/
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+#index {
+	font-size: 15px;	/*基準となるフォントサイズの上書き*/
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	background-attachment: fixed;
+	/*opacity: 0.9;*/
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+#map {
+	width: 80%;
+	margin: auto;
+}
+
+.wrapper {
+	min-height: 100vh;
+    position: relative;/*←相対位置*/
+    padding-bottom: 120px;/*←footerの高さ*/
+    box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+}
+/*リンクテキスト全般の設定
+---------------------------------------------------------------------------*/
+a {
+	color: #eee;	/*文字色*/
+	transition: 0.3s;
+}
+a:hover {
+	opacity: 0.8;	/*マウスオン時に80%の透明度にする*/
+}
+
+/*header（ロゴなどが入った最上段のブロック）
+---------------------------------------------------------------------------*/
+/*ヘッダーブロック*/
+header {
+	position: relative;
+	font-family: 'Cormorant', serif;
+	top: 0px;
+}
+
+/*トップページのロゴ下に書いている説明文*/
+header #logo  {
+	position: relative;
+	font-size: 1.8em;
+	text-align:left;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	background: #000;
+	font-size: 0.7rem;		/*文字サイズ*/
+	text-align: center;	
+}
+
+#footermenu {
+	display: flex;
+	list-style: none;
+	justify-content: flex-end;
+	margin: 0;
+	padding: 1%;	
+}
+
+#footermenu li {
+	display: inline-block;	/*横並びにする*/
+	padding: 0 10px;		/*上下、左右への余白*/
+	font-size: 1.2em;		/*文字サイズ*/
+	text-align: right;
+}
+
+
+ruby {
+	font-size: 1.8em;
+}
+
+ruby rt {
+	font-size: 1px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#contact {
+	text-align: center;
+	/*margin-top: 15em;*/
+}
+
+#contact ul li {
+    list-style: none;
+    margin-top: 10px;
+    text-align: left;
+}
+
+#contact label {
+    margin-right: 10px;
+    width:120px;
+    float: left;
+}
+
+#contact ul {
+    width: 700px;
+	display: inline-block;
+}
+
+button {
+	display: block;
+  	margin: 0 0 0 auto;
+}
+
+/*mainブロック設定
+---------------------------------------------------------------------------*/
+/*mainブロックの設定*/
+main {	
+	flex: 1;
+	text-align: center;
+}
+
+/*mainブロック内のh2タグ*/
+main h1 {
+	margin: 0;
+	margin-bottom: 1em;	/*下に空けるスペース*/
+	position: relative;		/*アニメーションに必要な設定*/
+	letter-spacing: 0.1em;	/*文字間隔を少しだけ広くとる設定*/
+}
+
+main h2 {
+	margin: 0;
+	margin-bottom: 1em;	/*下に空けるスペース*/
+	position: relative;		/*アニメーションに必要な設定*/
+	letter-spacing: 0.1em;	/*文字間隔を少しだけ広くとる設定*/
+}
+/*mainブロック内のh3タグ*/
+main h3 {
+	
+}
+
+/*mainブロックのpタグ*/
+main p {
+	margin: 0 20px 2em;	/*上、左右、下へ空けるスペース*/
+	font-family: 'Cormorant', serif;
+	font-size: 1em;
+}
+main p + p {
+	margin-top: -1em;
+}
+
+
+/*PAGE TOP（↑）設定
+---------------------------------------------------------------------------*/
+.pagetop-show {display: block;}
+
+/*ボタンの設定*/
+.pagetop a {
+	display: block;text-decoration: none;text-align: center;z-index: 99;
+	position: fixed;	/*スクロールに追従しない(固定で表示)為の設定*/
+	right: 20px;		/*右からの配置場所指定*/
+	bottom: 20px;		/*下からの配置場所指定*/
+	font-size: 1.5em;	/*文字サイズ*/
+	background: rgba(0,0,0,0.2);	/*背景色。0,0,0は黒の事で0.2は色が20%出た状態。*/
+	width: 60px;		/*幅*/
+	line-height: 60px;	/*高さ*/
+	border-radius: 50%;	/*円形にする*/
+}
+
+#info {
+	text-align: center;
+	/*margin-top: 15em;*/
+	font-weight: bolder;
+}
+
+#info ul li {
+    list-style: none;
+    margin-top: 10px;
+    text-align: left;
+}
+
+#info label {
+    margin-right: 10px;
+    width:120px;
+    float: left;
+}
+
+#info ul {
+    width: 60%;
+	display: inline-block;
+}
+
+li ul {
+	padding-left: 0
+}
+
+#mark {
+	position: absolute;
+	top: 10px;
+	left: 187px;
+	width: 50px;
+	height: 50px;
+}
+
+header #logo-outline {
+	position: relative;
+	font-size: 1.8em;
+	text-align:left;
+	margin-left: 10px;
+	margin-top: 10px;
+	background-image: url(/images/outline.jpg);
+	background-size: cover;
+	height: 300px;
+}
+
+header #logo-contact {
+	position: relative;
+	font-size: 1.8em;
+	text-align:left;
+	margin-left: 10px;
+	margin-top: 10px;
+	background-image: url(/images/contact.jpg);
+	background-size: cover;
+	height: 300px;
+}
+
+#governance {
+	margin-top: 50px;
+}
+
+#governance ul {
+	width: 80%;
+	display: inline-block;
+}
+
+#governance ul li {
+	text-align: left;
+}
+
+.map {
+	margin-top: 50px;
+}
+
+iframe {
+ margin-top: 10px;
+ width: 60em;
+ height: 38em;
+ overflow: hidden;
+filter:invert(60%);-webkit-filter:invert(100%)
+}
+
+#access {
+	margin-top: 80px;
+}
+
+#bbb {
+	font-size: 50px;
+	text-decoration: underline;
+}
+
+#aaa {
+	margin-top: -100px;
+	font-size: 20px;
+	font-family: monospace;
+}
