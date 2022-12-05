@@ -23,6 +23,6 @@ Route::put('/contact/confirm', 'ContactController@confirm')->name('contact.confi
 
 Route::put('/contact/thanks', 'ContactController@send')->name('contact.send');
 
-Route::get('/governance', 'HomeController@governance');
+Route::get('/governance', 'HomeController@governance')->name('governance');
 
-Route::get('/access', 'HomeController@access');
+Route::get('/access', 'HomeController@access')->name('access');

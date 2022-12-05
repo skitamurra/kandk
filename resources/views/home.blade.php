@@ -33,9 +33,9 @@
 			<footer>
 				<ul id="footermenu">
 					<li><a href={{ route('outline') }}>企業概要</a></li>
-					<li><a href="/governance">ガバナンス</a></li>
-					<li><a href="/access">アクセス</a></li>
-					<li><a href="/contact">お問い合わせ</a></li>
+					<li><a href={{ route('governance') }}>ガバナンス</a></li>
+					<li><a href={{ route('access') }}>アクセス</a></li>
+					<li><a href={{ route('contact.index') }}>お問い合わせ</a></li>
 				</ul>
 			</footer>
 			
