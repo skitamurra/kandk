@@ -58,6 +58,7 @@
     			<ul id="footermenu">
     				<li><a href="/outline">企業概要</a></li>
 					<li><a href="/governance">ガバナンス</a></li>
+					<li><a href="/access">アクセス</a></li>
     				<li><a href="/contact">お問い合わせ</a></li>
     			</ul>
     		</footer>

@@ -304,3 +304,10 @@ filter:invert(60%);-webkit-filter:invert(100%)
 	font-size: 20px;
 	font-family: monospace;
 }
+
+section {
+	margin-top: 130px;
+	min-height: 10em;
+    vertical-align: middle;
+    font-size: 25px;
+}

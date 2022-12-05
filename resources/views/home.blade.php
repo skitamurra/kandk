@@ -25,15 +25,16 @@
 					<h1><font size="10">K&K The Destination is a New Future!</font></h1>
 					<h2>インターネット事業を通じて社会をより豊かに</h2>
 				</section>
-				<div id="map" style="height:500px"></div>
-				<script src="{{ asset('/js/app.js') }}"></script>
-				<script src="https://maps.googleapis.com/maps/api/js?language=ja&region=JP&key=AIzaSyCjFSiWesch1MHvmc79AsxVnd7pZtW384E&callback=initMap" async defer>
-				</script>
+				<!--<div id="map" style="height:500px"></div>-->
+				<!--<script src="{{ asset('/js/app.js') }}"></script>-->
+				<!--<script src="https://maps.googleapis.com/maps/api/js?language=ja&region=JP&key=AIzaSyCjFSiWesch1MHvmc79AsxVnd7pZtW384E&callback=initMap" async defer>-->
+				<!--</script>-->
 			</main>
 			<footer>
 				<ul id="footermenu">
-					<li><a href="/outline">企業概要</a></li>
+					<li><a href={{ route('outline') }}>企業概要</a></li>
 					<li><a href="/governance">ガバナンス</a></li>
+					<li><a href="/access">アクセス</a></li>
 					<li><a href="/contact">お問い合わせ</a></li>
 				</ul>
 			</footer>
