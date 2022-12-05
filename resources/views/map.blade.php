@@ -14,7 +14,7 @@
 				<div id="logo-outline">
 					<img src="/images/kkmark.png" id="mark">
 					<ruby>
-						<a href="/">K&K LLC</a>
+						<a href={{ route('home') }}>K&K LLC</a>
 						<rt>ウェブの可能性</rt>
 					</ruby>
 				</div>
@@ -31,10 +31,10 @@
 			</main>
 			<footer>
 				<ul id="footermenu">
-					<li><a href="/outline">企業概要</a></li>
-					<li><a href="/governance">ガバナンス</a></li>
-					<li><a href="/access">アクセス</a></li>
-					<li><a href="/contact">お問い合わせ</a></li>
+					<li><a href={{ route('outline') }}>企業概要</a></li>
+					<li><a href={{ route('governance') }}>ガバナンス</a></li>
+					<li><a href={{ route('access') }}>アクセス</a></li>
+					<li><a href={{ route('contact.index') }}>お問い合わせ</a></li>
 				</ul>
 			</footer>
 			
