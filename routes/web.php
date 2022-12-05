@@ -13,7 +13,7 @@
 
 Route::get('/', 'HomeController@home');
 
-Route::get('/outline', 'HomeController@outline');->name('outline');
+Route::get('/outline', 'HomeController@outline')->name('outline');
 
 Route::get('/contact', 'ContactController@index')->name('contact.index');
 
