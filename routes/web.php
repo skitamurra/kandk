@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'HomeController@home');
+Route::get('/', 'HomeController@home')->name('home')
 
 Route::get('/outline', 'HomeController@outline')->name('outline');
 

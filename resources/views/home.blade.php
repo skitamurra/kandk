@@ -14,7 +14,7 @@
 				<div id="logo">
 					<img src="/images/kkmark.png" id="mark">
 					<ruby>
-						<a href="/">K&K LLC</a>
+						<a href={{ route('home') }}>K&K LLC</a>
 						<rt>ウェブの可能性</rt>
 					</ruby>
 				</div>
